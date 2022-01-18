@@ -66,6 +66,7 @@ void str_concat(char *result, char *string1, char *string2) {
     j = i + 1;
   for (i = 0; (result[j] = string2[i]) != '\0'; ++i, ++j)
     ;
+  result[j] = '\0';
 }
 
 bool str_eql(char *string1, char *string2) {
